@@ -295,6 +295,7 @@ DEPENDENCIES
   byebug
   capybara
   cssbundling-rails
+  factory_bot (~> 6.2)
   factory_bot_rails (~> 6.2)
   faker (~> 2.18)
   fuubar (~> 2.5, >= 2.5.1)

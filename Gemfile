@@ -69,3 +69,5 @@ end
 
 group :production do
 end
+
+gem "factory_bot", "~> 6.2"
