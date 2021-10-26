@@ -46,7 +46,13 @@ gem "faker", "~> 2.18"
 gem "jsbundling-rails"
 gem "cssbundling-rails"
 
+group :test do
+  gem "simplecov", "~> 0.21.2", require: false
+end
+
 group :development, :test do
+  gem "rspec-rails", "~> 5.0", ">= 5.0.1"
+  gem "factory_bot_rails", "~> 6.2"
   gem "standard", "~> 1.1", ">= 1.1.5", require: false
   gem "capybara"
   gem "webdrivers"
@@ -59,15 +65,9 @@ group :development do
   gem "rubocop", "~> 1.18"
   gem "rubocop-rails", "~> 2.11", ">= 2.11.3", require: false
   gem "rubocop-rspec", "~> 2.4"
-  gem "factory_bot_rails", "~> 6.2"
-end
-
-group :test do
-  gem "simplecov", "~> 0.21.2", require: false
-  gem "rspec-rails", "~> 5.0", ">= 5.0.1"
 end
 
 group :production do
 end
 
-gem "factory_bot", "~> 6.2"
+
