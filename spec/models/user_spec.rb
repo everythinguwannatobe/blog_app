@@ -34,9 +34,26 @@ RSpec.describe User, type: :model do
       expect(@user).to_not be_valid
     end
 
-    it "validates email format" do
-      @user.email = "USER@example.com"
+    it "validates email is unique" do
+      duplicate_user = @user.dup
+      expect(duplicate_user).to_not be_valid
+    end
+
+    it "validates email saved as lower-case" do
+      mixed_case_email = "FOO@example.COM"
+      @user.email = mixed_case_email
+      @user.save
       expect(@user).to be_valid
+    end
+
+    it "validates email format" do
+      valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org first.last@foo.jp alice+bob@baz.cn]
+
+      valid_addresses.each do |valid_address|
+        @user.email = valid_address
+        expect(@user).to be_valid, "#{valid_address.inspect} should be valid"
+      end
     end
   end
 end
+
