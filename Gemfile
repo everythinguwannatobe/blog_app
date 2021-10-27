@@ -11,7 +11,7 @@ gem "sass-rails", ">= 6"
 gem "faker", "~> 2.18"
 gem "jsbundling-rails"
 gem "cssbundling-rails"
-gem 'bcrypt', '~> 3.1.7'
+gem "bcrypt", "~> 3.1.7"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
