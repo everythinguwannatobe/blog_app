@@ -69,5 +69,3 @@ end
 
 group :production do
 end
-
-

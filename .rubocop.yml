@@ -23,3 +23,6 @@ AllCops:
     - node_modules/**/*
     - tmp/**/*
     - vendor/**/*
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space

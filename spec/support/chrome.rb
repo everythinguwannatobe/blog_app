@@ -1,6 +1,6 @@
 driver = :selenium_chrome_headless
 
-Capybara.server = :puma, {Silent: true}
+Capybara.server = :puma, { Silent: true }
 
 Capybara.register_driver driver do |app|
   options = ::Selenium::WebDriver::Chrome::Options.new
