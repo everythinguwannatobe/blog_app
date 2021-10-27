@@ -1,6 +1,7 @@
 require "simplecov"
 SimpleCov.start do
   add_filter "/spec/"
+  add_filter "/config/"
 end
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
