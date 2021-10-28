@@ -59,5 +59,16 @@ RSpec.feature "Users Signups", type: :feature do
 
       expect(page).to have_content("Password confirmation doesn't match Password")
     end
+
+    it "valid submission" do
+      visit signup_path
+      fill_in "Name", with: "Test User"
+      fill_in "Email", with: "test@test.com"
+      fill_in "Password", with: "foobar"
+      fill_in "Confirmation", with: "foobar"
+      click_button "Create my account"
+
+      expect(page).to have_content("Welcome to the Blog App")
+    end
   end
 end
