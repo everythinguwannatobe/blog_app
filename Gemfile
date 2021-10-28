@@ -20,6 +20,7 @@ group :development, :test do
   gem "factory_bot_rails", "~> 6.2"
   gem "standard", "~> 1.1", ">= 1.1.5", require: false
   gem "capybara"
+  gem "capybara-screenshot"
   gem "webdrivers"
 end
 

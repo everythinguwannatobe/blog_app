@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-
   def new
   end
 
@@ -17,8 +16,7 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out
-    respond_to do |format|
-      format.html { redirect_to root_url }
-    end
+    flash[:success] = "User has been logged out"
+    redirect_to root_url
   end
 end
