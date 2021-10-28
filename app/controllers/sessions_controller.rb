@@ -16,11 +16,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    debugger
-    logout
+    log_out
     respond_to do |format|
       format.html { redirect_to root_url }
-      format.turbo_stream
     end
   end
 end
