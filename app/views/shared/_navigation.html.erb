@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <%= link_to "Blog App", root_path, class: "navbar-brand" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,22 +13,24 @@
           <%= link_to "Help", "#", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%# if  %>
+          <% if logged_in? %>
             <%= link_to "Users", users_path, class: "nav-link" %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Account
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><%= link_to "Profile", "#", class: "dropdown-item" %></li>
+              <li><%= link_to "Profile", current_user, class: "dropdown-item" %></li>
               <li><%= link_to "Settings", "#", class: "dropdown-item" %></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><%= link_to "Log out", "#", method: :delete, class: "dropdown-item" %></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><%= button_to "Log out", logout_path, method: :delete, data: { turbo: false }, class: "dropdown-item" %></li>
             </ul>
           </li>
-        <%# else %>
+        <% else %>
           <li class="nav-item"><%= link_to "Log in", login_path, class: "nav-link" %></li>
-        <%# end %>
+        <% end %>
       </ul>
     </div>
   </div>
