@@ -2,12 +2,10 @@
 # yarn lockfile v1
 
 
-"@popperjs/core@^2.11.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.1.tgz#81178278931b46924f4b9d08e9caf65ba91e3a7f"
-  integrity sha512-lfBpADue1tq3+ZLp7E/r8qQB2XWlrml6BuwDzeJ3cNx7h2K1ww5mCs0Vdt9S5EIJHalPifCTt3TFtCTmnQetlA==
-  dependencies:
-    closure-compiler "^0.2.12"
+"@popperjs/core@^2.11.3":
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.3.tgz#f327fcb4f2576bf0b0ea0e65e773495cdf40188b"
+  integrity sha512-8U7hIl7+30XbIrJ0deQMXpXESM1L4yrt6BHok5hzcR0LivivuNkk+tHU1iRVScOwCmQcrOr6kvtIr29MNbQHqQ==
 
 anymatch@~3.1.2:
   version "3.1.2"
@@ -48,13 +46,6 @@ braces@~3.0.2:
     readdirp "~3.6.0"
   optionalDependencies:
     fsevents "~2.3.2"
-
-closure-compiler@^0.2.12:
-  version "0.2.12"
-  resolved "https://registry.yarnpkg.com/closure-compiler/-/closure-compiler-0.2.12.tgz#6c3087cad12742c79e47f0ce50e87af91cf8e171"
-  integrity sha1-bDCHytEnQseeR/DOUOh6+Rz44XE=
-  dependencies:
-    google-closure-compiler "20150901.x"
 
 esbuild-android-64@0.14.25:
   version "0.14.25"
@@ -200,11 +191,6 @@ glob-parent@~5.1.2:
   integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   dependencies:
     is-glob "^4.0.1"
-
-google-closure-compiler@20150901.x:
-  version "20150901.0.0"
-  resolved "https://registry.yarnpkg.com/google-closure-compiler/-/google-closure-compiler-20150901.0.0.tgz#3d01c6cade65790a9bfb4e30b2158b7635acbade"
-  integrity sha1-PQHGyt5leQqb+04wshWLdjWsut4=
 
 immutable@^4.0.0:
   version "4.0.0"
