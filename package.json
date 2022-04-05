@@ -2,7 +2,7 @@
   "name": "app",
   "private": "true",
   "dependencies": {
-    "@popperjs/core": "^2.11.4",
+    "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.1.3",
     "esbuild": "^0.14.31",
     "sass": "^1.49.11"
